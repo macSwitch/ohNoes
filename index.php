@@ -5,7 +5,6 @@
 			<li><a class="scroll" href="#0">Home</a></li>
 			<li><a class="scroll" href="#1">Members</a></li>
 			<li><a class="scroll" href="#2">Contact Us</a></li>
-			<li><a class="scroll" href="#3">Else</a></li>
 		</ul>
 	</div>
 </div>
