@@ -1,4 +1,3 @@
-
  <?php
     $json_string_mou = file_get_contents("https://eu.api.battle.net/d3/profile/mou-2289/?locale=en_GB&apikey=mgqy8nb6nfktdw39q5mm7de2jwjpqcc7");
      $parsed_json_mou = json_decode($json_string_mou);
@@ -17,8 +16,9 @@
      $mouHeroID_6 = $parsed_json_mou->{'heroes'}[6]->{'id'};
      $mouHeroID_7 = $parsed_json_mou->{'heroes'}[7]->{'id'};
      $mouHeroID_8 = $parsed_json_mou->{'heroes'}[8]->{'id'};
-     $mouHeroID_0 = $parsed_json_mou->{'heroes'}[9]->{'id'};
+     $mouHeroID_9 = $parsed_json_mou->{'heroes'}[9]->{'id'};
      $mouHeroID_10 = $parsed_json_mou->{'heroes'}[10]->{'id'};
+     $mouHeroID_11 = $parsed_json_mou->{'heroes'}[11]->{'id'};
 
      if ($mouLastPlayed === $mouHeroID_0) { 
      	$q = 0;
@@ -45,8 +45,6 @@
           $q = 10;
      } else if ($mouLastPlayed === $mouHeroID_11) { 
           $q = 11;
-     } else if ($mouLastPlayed === $mouHeroID_12) { 
-          $q = 12;
      };
 
      $mouHeroName = $parsed_json_mou->{'heroes'}[$q]->{'name'};
