@@ -685,6 +685,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #fff;
   z-index: 2;
   height: 70px;
+  box-shadow: 0px 5px 15px #252620;
 }
 
 .mainNav {
@@ -790,7 +791,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
     color: #32C561;
     font-size: 200px;
-    text-shadow: 2px 2px 4px #000000;
+    text-shadow: 0px -2px 0px #38D395;
   }
 
   h2 {
@@ -817,6 +818,32 @@ h1, h2, h3, h4, h5, h6 {
     text-align: left;
   }
 }
+.info {
+  text-align: left; 
+}
+.shadow {
+  display: block;
+  position: relative;
+  
+  img {
+    display: block;
+  }
+
+  &:before {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-box-shadow: inset 0px 0px 3px 1px rgba(0,0,0,0.2); 
+    box-shadow: inset 0px 0px 3px 1px rgba(0,0,0,0.2); 
+  }
+}
+
+  .bioSpan {
+    margin-left: 10px;
+  }
+
 
 /*-------------------------------------------------------------------------
   6b. Contact US Styles -------------------------------------------------*/
@@ -840,6 +867,10 @@ h1, h2, h3, h4, h5, h6 {
     background-color: color(bgPrime);
     color: color(fontPrime);
     @include clearfix();
+  }
+
+  .test {
+    font-size: 20px; 
   }
 
 /*=====================================================================================

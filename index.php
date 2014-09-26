@@ -1,4 +1,5 @@
 <?php require('assets/includes/inc_head_content.php');?>
+
 <div class="headerNav">
 	<div class="mainNav">
 		<ul>
@@ -13,7 +14,7 @@
 		<div class="container">
 			<div class="logoContainer">
 				<h1>&lt;ohNoes&gt;</h1>
-				<h2>it's a clan website</h2>
+				<h2>a pointless clan website</h2>
 			</div>
 		</div>	
 	</div>
@@ -50,46 +51,94 @@
 		</div>	
 	</div>
 
+
 	<div class="cdScrollingBg cdColor-2">
 		<div class="container">
 			<div class="cdContainer">
 				<div class="bioContainer">
+					<?php require('assets/includes/mou_api.php');?>
 					<h3>Mou</h3>
 					<div class="row">
-						<div class="col two"><p>Do a flip! You, a bobsleder!? That I'd like to see! You, minion. Lift my arm. AFTER HIM! I guess if you want children beaten, you have to do it yourself.</p>
-						<p>You guys realize you live in a sewer, right? Enough about your promiscuous mother, Hermes! We have bigger problems. You are the last hope of the universe. Stop it, stop it. It's fine. I will 'destroy' you! Oh, I always feared he might run off like this. Why, why, why didn't I break his legs?</p>
-						<p>Oh sure! Blame the wizards! Ven ve voke up, ve had zese wodies. Wow, you got that off the Internet? In my day, the Internet was only used to download pornography. Negative, bossy meat creature! Then we'll go with that data file! Yes, I saw. You were doing well, until everyone died.</p>
-						<p>No! I want to live! There are still too many things I don't own! That's not soon enough! Wow! A superpowers drug you can just rub onto your skin? You'd think it would be something you'd have to freebase.</p></div>
+						<div class="col two info">
+							<p>Battle Tag: 
+								<span class="bioSpan"><?php echo $mouBattleTag;?></span>
+							</p>
+							<p>Last Hero Played: 
+								<span class="bioSpan"><?php echo $mouHeroName;?></span>
+							</p>
+							<p>Hardcore Paragon Points:  
+								<span class="bioSPan"><?php echo $mouHCpara;?></span>
+							</p>
+							<p>Hardcore Seasonal Paragon Points:  
+								<span class="bioSPan"><?php echo $mouHCSpara;?></span>
+							</p>
+
+						</div>
 						<div class="col two"><img src="assets/images/leaderMonk.jpg" alt=""></div>
 					</div>
 				</div>
 				<div class="bioContainer">
+					<?php require("assets/includes/zee_api.php");?>
 					<h3>Zee</h3>
 					<div class="row">
-						<div class="col two"><p>No! I want to live! There are still too many things I don't own! You seem malnourished. Are you suffering from intestinal parasites? Bender, you risked your life to save me! You're going back for the Countess, aren't you?</p>
-						<p>Oh, I don't have time for this.  I have to go and buy a single piece of fruit with a coupon and then return it, making people wait behind me while I complain. How much did you make me? I suppose I could part with 'one' and still be feared&hellip; No! The kind with looting and maybe starting a few fires!</p>
-						<p>Oh, how I wish I could believe or understand that! There's only one reasonable course of action now: kill Flexo! These old Doomsday Devices are dangerously unstable. I'll rest easier not knowing where they are. When I was first asked to make a film about my nephew, Hubert Farnsworth, I thought "Why should I?" Then later, Leela made the film. But if I did make it, you can bet there would have been more topless women on motorcycles. Roll film! Oh sure! Blame the wizards! Is that a cooking show?</p>
-						<p>With gusto. You, minion. Lift my arm. AFTER HIM! Ah, the 'Breakfast Club' soundtrack!  I can't wait til I'm old enough to feel ways about stuff! Interesting. No, wait, the other thing: tedious. Hey, whatcha watching?</p></div>
+						<div class="col two info">
+							<p>Battle Tag: 
+								<span class="bioSpan"><?php echo $zeeBattleTag;?></span>
+							</p>
+							<p>Last Hero Played: 
+								<span class="bioSPan"><?php echo $zeeHeroName;?></span>
+							</p>
+							<p>Hardcore Paragon Points:  
+								<span class="bioSPan"><?php echo $zeeHCpara;?></span>
+							</p>
+							<p>Hardcore Seasonal Paragon Points:  
+								<span class="bioSPan"><?php echo $zeeHCSpara;?></span>
+							</p>
+
+						</div>
 						<div class="col two"><img src="assets/images/zeeDH.jpg" alt=""></div>
 					</div>
 				</div>
 				<div class="bioContainer">
+					<?php require('assets/includes/mac_api.php');?>
 					<h3>Mac</h3>
-					<div class="row">
-						<div class="col two"><p>Wow, you got that off the Internet? In my day, the Internet was only used to download pornography. As an interesting side note, as a head without a body, I envy the dead. Please, Don-Bot&hellip; look into your hard drive, and open your mercy file! You're going to do his laundry? That's not soon enough!</p>
-						<p>You've killed me! Oh, you've killed me! You're going to do his laundry? Guards! Bring me the forms I need to fill out to have her taken away!</p>
-						<p>Bender, hurry! This fuel's expensive! Also, we're dying! Your best is an idiot! Check it out, y'all. Everyone who was invited is here. With gusto.</p>
-						<p>No! I want to live! There are still too many things I don't own! But I know you in the future. I cleaned your poop. Oh no! The professor will hit me! But if Zoidberg 'fixes' it&hellip; then perhaps gifts! Do a flip! I suppose I could part with 'one' and still be feared&hellip;</p></div>
+				    <div class="row">
+						<div class="col two info">
+							<p>Battle Tag: 
+								<span class="bioSpan"><?php echo $macBattleTag;?></span>
+							</p>
+							<p>Last Hero Played: 
+								<span class="bioSPan"><?php echo $macHeroName;?></span>
+							</p>
+							<p>Hardcore Paragon Points:  
+								<span class="bioSPan"><?php echo $macHCpara;?></span>
+							</p>
+							<p>Hardcore Seasonal Paragon Points:  
+								<span class="bioSPan"><?php echo $macHCSpara;?></span>
+							</p>
+
+						</div>
 						<div class="col two"><img src="assets/images/macWD.jpg" alt=""></div>
 					</div>
 				</div>
 				<div class="bioContainer">
+				<?php require('assets/includes/trev_api.php');?>
 					<h3>DeathSlap</h3>
 					<div class="row">
-						<div class="col two"><p>Robot 1-X, save my friends!  And Zoidberg! I'll tell them you went down prying the wedding ring off his cold, dead finger. I suppose I could part with 'one' and still be feared&hellip; Wow, you got that off the Internet? In my day, the Internet was only used to download pornography.</p>
-						<p>Bender, you risked your life to save me! I'm a thing. The key to victory is discipline, and that means a well made bed. You will practice until you can make your bed in your sleep. Bender, hurry! This fuel's expensive! Also, we're dying! Fry, we have a crate to deliver. Do a flip!</p>
-						<p>Tell her you just want to talk. It has nothing to do with mating. Hi, I'm a naughty nurse, and I really need someone to talk to. $9.95 a minute. Is that a cooking show? I usually try to keep my sadness pent up inside where it can fester quietly as a mental illness. That's not soon enough! Have you ever tried just turning off the TV, sitting down with your children, and hitting them?</p>
-						<p>Oh, I don't have time for this.  I have to go and buy a single piece of fruit with a coupon and then return it, making people wait behind me while I complain. You're going back for the Countess, aren't you? Come, Comrade Bender! We must take to the streets! Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! Kif, I have mated with a woman. Inform the men.</p></div>
+						<div class="col two info">
+							<p>Battle Tag: 
+								<span class="bioSpan"><?php echo $trevBattleTag;?></span>
+							</p>
+							<p>Last Hero Played: 
+								<span class="bioSPan"><?php echo $trevHeroName;?></span>
+							</p>
+							<p>Hardcore Paragon Points:  
+								<span class="bioSPan"><?php echo $trevHCpara;?></span>
+							</p>
+							<p>Hardcore Seasonal Paragon Points:  
+								<span class="bioSPan"><?php echo $trevHCSpara;?></span>
+							</p>
+						</div>
 						<div class="col two"><img src="assets/images/trevCS.jpg" alt=""></div>
 					</div>
 				</div>
@@ -115,7 +164,7 @@
 						<p>Kids have names? How much did you make me? Ask her how her day was. Take me to your leader! Bender, being God isn't easy. If you do too much, people get dependent on you, and if you do nothing, they lose hope. You have to use a light touch. Like a safecracker, or a pickpocket. And I'd do it again! And perhaps a third time! But that would be it.</p>
 						<p>I videotape every customer that comes in here, so that I may blackmail them later. Throw her in the brig. I suppose I could part with 'one' and still be feared&hellip; I saw you with those two "ladies of the evening" at Elzars. Explain that. The key to victory is discipline, and that means a well made bed. You will practice until you can make your bed in your sleep.</p>
 						<p>I'm a thing. You're going to do his laundry? Have you ever tried just turning off the TV, sitting down with your children, and hitting them? Negative, bossy meat creature! Your best is an idiot!</p></div>
-						<div class="col two"><img src="assets/images/harbWZ.jpg" alt=""></div>
+						<div class="col two"><img class="shadow" src="assets/images/harbWZ.jpg" alt=""></div>
 					</div>
 				</div>
 			</div>
@@ -125,16 +174,14 @@
 	<div id="2" class="cdFixedBg cdBg-3">
 		<div class="container">
 			<div class="logoContainer">
-				<h1 class="contactHeader">&lt;Contact Us&gt;</h1>
+				<h1 class="contactHeader inset-text">&lt;Contact Us&gt;</h1>
 			</div>
 		</div>	
 	</div>
 
 	<div class="cdScrollingBg cdColor-3">
 		<div class="container">
-			<div class="cdContainer">
-				<p>Fuck you.</p>
-			</div>
+			<p>One does not simply contact us - Ain't nobody got time for that.</p>
 		</div>
 	</div>
 
